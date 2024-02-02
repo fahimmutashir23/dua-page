@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
           <Navbar />
           <div className="grid grid-cols-[100px,1fr,330px] gap-6">
             <LeftNav />
-            <div className="w-full ">{children}</div>
+            <div className="w-full">{children}</div>
             <RightNav />
           </div>
         </div>
