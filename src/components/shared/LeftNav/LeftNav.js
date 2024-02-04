@@ -21,19 +21,20 @@ const LeftNav = () => {
           <div>
             <ul className="space-y-7 bg-white">
               <li className="w-full bg-white">
-                <Link href="/home">
-                  <Image src={home} className="bg-white h-10 w-10 mx-auto" />
+                <Link href="/">
+                  <Image src={home} alt="icon" className="bg-white h-10 w-10 mx-auto" />
                 </Link>
               </li>
               <li className="w-full bg-white">
                 <Link href="/allDuas">
-                  <Image src={allDua} className="bg-white h-10 w-10 mx-auto" />
+                  <Image src={allDua} alt="icon" className="bg-white h-10 w-10 mx-auto" />
                 </Link>
               </li>
               <li className="w-full bg-white">
                 <Link href="/memorize">
                   <Image
                     src={memorize}
+                    alt="icon"
                     className="bg-white h-10 w-10 mx-auto"
                   />
                 </Link>
@@ -42,29 +43,30 @@ const LeftNav = () => {
                 <Link href="/bookmark">
                   <Image
                     src={bookmark}
+                    alt="icon"
                     className="bg-white h-10 w-10 mx-auto"
                   />
                 </Link>
               </li>
               <li className="w-full bg-white">
                 <Link href="/ruqya">
-                  <Image src={ruqya} className="bg-white h-10 w-10 mx-auto" />
+                  <Image src={ruqya} alt="icon" className="bg-white h-10 w-10 mx-auto" />
                 </Link>
               </li>
               <li className="w-full bg-white">
                 <Link href="/qna">
-                  <Image src={duaqa} className="bg-white h-10 w-10 mx-auto" />
+                  <Image src={duaqa} alt="icon" className="bg-white h-10 w-10 mx-auto" />
                 </Link>
               </li>
               <li className="w-full bg-white">
                 <Link href="/book">
-                  <Image src={book} className="bg-white h-10 w-10 mx-auto" />
+                  <Image src={book} alt="icon" className="bg-white h-10 w-10 mx-auto" />
                 </Link>
               </li>
             </ul>
           </div>
           <div className="bg-white">
-            <Image src={support} className="bg-white" />
+            <Image src={support} alt="icon" className="bg-white" />
           </div>
         </div>
     </div>

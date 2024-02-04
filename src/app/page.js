@@ -80,9 +80,8 @@ const HomePage = () => {
     }
   };
 
-  const handlePlay = () => {
+  const handlePlay = (id) => {
     const audio = audioRef.current;
-
     if (isPlaying) {
       audio.pause();
     } else {
@@ -181,7 +180,8 @@ const HomePage = () => {
         <div className="space-y-2">
           {duas.map((dua) => (
             <div
-              className="bg-white rounded-xl px-5 py-2"
+            key={dua.dua_id}
+            className="bg-white rounded-xl px-5 py-2"
               id={`subcat-${dua.subcat_id}`}
             >
               <div className="flex items-center gap-2 bg-white mb-3">
@@ -226,8 +226,8 @@ const HomePage = () => {
                 style={{color: 'white'}}
                 /> */}
                   <div className="bg-white flex-1">
-                    <button onClick={handlePlay}>
-                      <Image src={audioIcon} className="bg-white" />
+                    <button onClick={()=>handlePlay(dua.dua_id)}>
+                      <Image src={audioIcon} alt="icon" className="bg-white" />
                     </button>
                     <audio ref={audioRef} src={dua.audio}></audio>
                   </div>
